@@ -1,0 +1,6 @@
+mongo # 进入mongdb
+use admin # 进入admin数据库
+db.auth("mwz","gorgeous") # 身份验证
+use POI # 创建/进入POI数据库
+db.creatCollection("poi") # 创建poi集合
+db.poi.find() # 查询poi集合中的所有数据

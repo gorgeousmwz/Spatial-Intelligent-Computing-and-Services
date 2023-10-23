@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "eda9db99-2f5a-4367-9c7e-5d7a71497fb5",
+		"name": "POI Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26309377"
+	},
+	"item": [
+		{
+			"name": "queryByID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://124.222.93.155:7777/queryByID?password=123456&id=蒙39",
+					"protocol": "http",
+					"host": [
+						"124",
+						"222",
+						"93",
+						"155"
+					],
+					"port": "7777",
+					"path": [
+						"queryByID"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "123456"
+						},
+						{
+							"key": "id",
+							"value": "蒙39"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryByProvince",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://124.222.93.155:7777/queryByProvince?password=123456&province=新&order=-1",
+					"protocol": "http",
+					"host": [
+						"124",
+						"222",
+						"93",
+						"155"
+					],
+					"port": "7777",
+					"path": [
+						"queryByProvince"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "123456"
+						},
+						{
+							"key": "province",
+							"value": "新"
+						},
+						{
+							"key": "order",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryByRectangle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://124.222.93.155:7777/queryByRectangle?password=123456&minLon=103.0&maxLon=111.1&minLat=37.0&maxLat=42.5&order=1",
+					"protocol": "http",
+					"host": [
+						"124",
+						"222",
+						"93",
+						"155"
+					],
+					"port": "7777",
+					"path": [
+						"queryByRectangle"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "123456"
+						},
+						{
+							"key": "minLon",
+							"value": "103.0"
+						},
+						{
+							"key": "maxLon",
+							"value": "111.1"
+						},
+						{
+							"key": "minLat",
+							"value": "37.0"
+						},
+						{
+							"key": "maxLat",
+							"value": "42.5"
+						},
+						{
+							"key": "order",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryByCircle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://124.222.93.155:7777/queryByCircle?password=123456&centerLon=108.417243&centerLat=31.543974&radiusByKm=100&order=1",
+					"protocol": "http",
+					"host": [
+						"124",
+						"222",
+						"93",
+						"155"
+					],
+					"port": "7777",
+					"path": [
+						"queryByCircle"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "123456"
+						},
+						{
+							"key": "centerLon",
+							"value": "108.417243"
+						},
+						{
+							"key": "centerLat",
+							"value": "31.543974"
+						},
+						{
+							"key": "radiusByKm",
+							"value": "100"
+						},
+						{
+							"key": "order",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
